@@ -1,0 +1,13 @@
+<div style="background: #bebebe; padding: 20px; margin: 50px 200px 50px 200px;">
+    <div >
+      <span>{{tempoAtual.cidade}}, {{tempoAtual.pais}}</span>
+      <span>{{tempoAtual.data | date:'fullDate'}}</span>
+    </div>
+    <div>
+      <img height='72' [src]='tempoAtual.imagem'>
+      <span>{{tempoAtual.temperatura | number:'1.0-0'}}</span>
+    </div>
+    <div>
+      {{tempoAtual.descricao}}
+    </div>
+</div>
