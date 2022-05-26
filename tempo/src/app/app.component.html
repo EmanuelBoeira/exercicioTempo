@@ -1,9 +1,27 @@
 <div style="text-align:center">
-  <h1>Veja o clima da sua cidade aqui!</h1>
-  <div>Sua cidade, sua previsão, aqui e agora</div>
-  <h2>Previsões</h2>
-  <div>Previsão atual:</div>
-  <app-tempo-atual></app-tempo-atual>
+  <mat-toolbar color="primary">
+    <span>Veja o clima da sua cidade aqui!</span>
+  </mat-toolbar>
+
+  <div fxLayoutAlign="center">
+    <div class="mat-caption vertical-margin">Sua cidade, sua previsão, aqui e agora</div>
+  </div>
+
+  <div fxLayout="row">
+    <mat-card fxFlex="300px">
+      <h2>Previsões</h2>
+
+      <mat-card-header>
+        <mat-card-title>
+          <div class="mat-headline">Previsão atual:</div>
+        </mat-card-title>
+      </mat-card-header>
+      
+      <mat-card-content>
+        <app-tempo-atual></app-tempo-atual>
+      </mat-card-content>
+    </mat-card>
+  </div>
 </div>
 
 
